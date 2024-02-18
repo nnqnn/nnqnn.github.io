@@ -7,8 +7,6 @@ body {
 }
 
 /* Светлая и темная темы */
-
-
 .dark-theme {
     background-color: #333;
     color: #fff;
@@ -29,12 +27,12 @@ header {
 
 /* Профиль */
 #bio-tile {
-    background-color: #8a8a8a; /* Цвет фона плитки */
-    border-radius: 15px; /* Закругленные углы плитки */
-    padding: 10px; /* Внутренние отступы плитки */
-    margin: 10px auto; /* Отступы вокруг плитки */
-    max-width: 610px; /* Максимальная ширина плитки */
-    text-align: center; /* Выравнивание текста внутри плитки */
+    background-color: #8a8a8a;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 610px;
+    text-align: center;
 }
 
 #profile {
@@ -47,14 +45,15 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px; /* Отступ между аватаром и плиткой */
+    margin-bottom: 20px;
 }
 
 .logo-image {
-    border-radius: 10%; /* Дает круглую форму изображению */
-    width: 50px; /* Установите желаемую ширину */
-    height: 50px; /* Установите желаемую высоту */
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
 }
+
 /* Ссылки на социальные сети */
 #social-links {
     display: flex;
@@ -115,11 +114,34 @@ header {
     border-color: #bbb;
 }
 
+
+/* Медиа-запросы для мобильных устройств */
+
+    /* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+
+
+
+#social-links {
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: center; /* Центрирование иконок по горизонтали */
+    gap: 5px; /* Расстояние между иконками */
+}
+
+.social-link {
+    width: 60px; /* Меньше размер для мобильных устройств */
+    height: 60px; /* Меньше размер для мобильных устройств */
+    line-height: 60px; /* Высота строки соответствует высоте блока */
+}
+}
+
+
+/* отвечает за отображение и расположение версии */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    height: 30px; /* Задайте высоту футера */
     text-align: right;
-    padding: 10px 0;
-
+    padding: 1px ;
 }
