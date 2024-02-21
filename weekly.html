@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Новости - Avtohauser</title>
-    <link rel="stylesheet" href="style-news.css">
+    <title>Avtohauser</title>
+    <link rel="stylesheet" href="style-weekly.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="script.js" defer></script>
     <link rel="icon" href="pins/omori Avatar.jpg" type="icon">
 </head>
-<body class="light-theme">
+<body>
     <header>
         <div id="sidebar" class="sidebar">
             <!-- Кнопка для закрытия сайдбара -->
@@ -25,6 +25,7 @@
         <div id="logo" onclick="openNav()">
             <img src="https://media.giphy.com/media/g4kNZXkRC2SZ9yahpw/giphy.gif" alt="лого" class="logo-image">
         </div>
+        <!-- темсвичер-->
         <div class="theme-switcher">
             <input type="radio" id="dark" name="theme" value="dark" checked onclick="toggleTheme('dark')">
             <label for="dark">Dark</label>
@@ -33,27 +34,25 @@
         </div>
     </header>
 
-    <!-- Контейнер для новостей -->
-    <div class="news-container">
-        <!-- Пример новости -->
-        <div class="news-item">
-            <img src="pins/белочка.jpg" alt="Описание картинки" class="news-image">
-            <div class="news-content">
-                <h2>новости!</h2>
-                <h3>они реально появились</h3>
-                <ul>
-                    <li>появилась вкладка новостей</li>
-                </ul>
-                <!-- дата поста-->
-                <div class="news-version">20.2.24</div>
-            </div>
+<!-- Контейнер для постов -->
+<div class="news-container">
+    
+    <div class="news-item">
+        <img src="pins/безиль.jpeg" alt="Описание картинки" class="news-image">
+        <div class="news-content">
+            <h2>первый пост.</h2>
+            <h3>это будет первый и тестовый пост на этот сайт</h3>
+            <p> сайт потихоньку доделывается, верстается, но этого по прежнему мало</p>
+         <!--добавить дату-->  
+            <div class="news-version"> 21.02.24</div>
         </div>
-        <!-- Добавьте дополнительные новости по аналогии -->
     </div>
+    <!-- Добавьте дополнительные посты по аналогии -->
 
-    <!-- Футер сайта -->
-    <footer>
-        <!-- Здесь может быть информация о копирайте, ссылки на социальные сети и т.д. -->
-    </footer>
+
+<!-- Футер сайта -->
+<footer>
+    <!-- Здесь может быть информация о копирайте, ссылки на социальные сети и т.д. -->
+</footer>
+
 </body>
-</html>

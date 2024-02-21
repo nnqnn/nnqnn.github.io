@@ -17,14 +17,12 @@ body {
     color: #000;
 }
 
-/* Стили для новостей */
-.news-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+.logo-image {
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
 }
+
 
 .news-item {
     background-color: #8a8a8a; /* Используем цвет из вашего стиля */
@@ -74,13 +72,6 @@ body {
         width: 90%; /* Занимает большую часть ширины экрана */
     }
 }
-
-.logo-image {
-    border-radius: 10%;
-    width: 50px;
-    height: 50px;
-}
-
 /* Стили для сайдбара */
 .sidebar {
     height: 100%;
@@ -186,4 +177,39 @@ top: 10px; /* Отступ сверху */
 right: 10px; /* Отступ справа */
 z-index: 1000; /* Убедитесь, что переключатель темы находится над другими элементами */
 }
+ 
+/*медиа запросы*/
+/* Медиа-запросы для мобильных устройств */
 
+    /* Медиа-запросы для мобильных устройств */
+    @media (max-width: 768px) {
+
+
+
+        #social-links {
+            flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+            justify-content: center; /* Центрирование иконок по горизонтали */
+            gap: 5px; /* Расстояние между иконками */
+        }
+        
+        .social-link {
+            width: 60px; /* Меньше размер для мобильных устройств */
+            height: 60px; /* Меньше размер для мобильных устройств */
+            line-height: 60px; /* Высота строки соответствует высоте блока */
+        }
+        }
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.logo-image {
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+}
