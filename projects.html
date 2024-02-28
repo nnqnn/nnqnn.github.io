@@ -1,6 +1,48 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Avtohauser-projects</title>
+    <title>Avtohauser</title>
+    <link rel="stylesheet" href="ctyle-prj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="pins/omori Avatar.jpg" type="icon">
+</head>
+<body>
+    <header>
+        <div id="sidebar" class="sidebar">
+            <!-- Кнопка для закрытия сайдбара -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Содержимое сайдбара -->
+            <a href="index.html">About me</a>
+            <a href="news.html">News</a>
+            <a href="weekly.html">Weekly posts</a>
+            <a href="projects.html">My projects</a>
+        </div>
+          
+        <!-- Используйте эту кнопку для открытия сайдбара -->
+        <div id="logo" onclick="openNav()">
+            <img src="https://media.giphy.com/media/g4kNZXkRC2SZ9yahpw/giphy.gif" alt="лого" class="logo-image">
+        </div>
+        <!-- темсвичер-->
+        <div class="theme-switcher">
+            <input type="radio" id="dark" name="theme" value="dark" checked onclick="toggleTheme('dark')">
+            <label for="dark">Dark</label>
+            <input type="radio" id="light" name="theme" value="light" onclick="toggleTheme('light')">
+            <label for="light">Light</label>
+        </div>
+    </header>
+    <div class="news-back">
+    <div class="news-container">
+    
+        <div class="news-item">
+            <img src="pins/безяяjpg.jpg" alt="Описание картинки" class="news-image">
+            <div class="news-content">
+                <h2>Итоги недели</h2>
+                <p> прошла педеля, а ничего так и не изменилось, я продолжаю прокастинацию, нихрена не делаю хоть и надо, зато удаленка :&#41;
+                    А, ну еще чуть начал делать вкладку проектов, но там ничего нет, позже буду делать пет по теме магазина, кому интерестно в следующих постах будет инфа про это.
+                </p>
+             <!--добавить дату-->  
+                <div class="news-version"> 27.02.24</div>
+            </div>
+        </div>

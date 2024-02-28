@@ -23,6 +23,21 @@ body {
     height: 50px;
 }
 
+.news-back {
+    background-color: #ffffff; /* Используем цвет из вашего стиля */
+    border-radius: 15px; /* Сохраняем стиль скругления */
+    margin: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    .news {
+        background-color: #ffffff; /* Используем цвет из вашего стиля */
+        border-radius: 15px; /* Сохраняем стиль скругления */
+        margin: 10px;
+        max-width: 100%;
+        overflow: hidden;
+       
+    }
+}
 
 .news-item {
     background-color: #8a8a8a; /* Используем цвет из вашего стиля */
@@ -213,4 +228,3 @@ z-index: 1000; /* Убедитесь, что переключатель темы
     width: 50px;
     height: 50px;
 }
-
