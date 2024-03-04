@@ -1,6 +1,6 @@
 /* Основные стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'MuseoModerno';
     margin: 0;
     padding: 0;
     transition: background-color 0.3s;
@@ -23,70 +23,11 @@ body {
     height: 50px;
 }
 
-.news-back {
-    background-color: #ffffff; /* Используем цвет из вашего стиля */
-    border-radius: 15px; /* Сохраняем стиль скругления */
-    margin: 10px;
-    max-width: 100%;
-    overflow: hidden;
-    .news {
-        background-color: #ffffff; /* Используем цвет из вашего стиля */
-        border-radius: 15px; /* Сохраняем стиль скругления */
-        margin: 10px;
-        max-width: 100%;
-        overflow: hidden;
-       
-    }
-}
-
-.news-item {
-    background-color: #8a8a8a; /* Используем цвет из вашего стиля */
-    border-radius: 15px; /* Сохраняем стиль скругления */
-    margin: 10px;
-    max-width: 500px;
-    overflow: hidden;
-    transition: transform 0.3s; /* Добавляем плавное увеличение */
-}
 
 
-.news-image {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
 
-.news-content {
-    padding: 10px;
-    color: inherit; /* Цвет текста наследуется от темы */
-}
 
-.news-content h2, .news-content h3 {
-    margin: 0;
-    padding: 5px 0;
-}
 
-.news-content ul {
-    padding-left: 20px;
-}
-
-.news-version {
-    font-size: 0.8em;
-    color: #555;
-    padding: 5px;
-}
-
-/* Медиа-запросы для мобильных устройств */
-@media (max-width: 768px) {
-    .news-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .news-item {
-        width: 90%; /* Занимает большую часть ширины экрана */
-    }
-}
 /* Стили для сайдбара */
 .sidebar {
     height: 100%;
@@ -192,39 +133,80 @@ top: 10px; /* Отступ сверху */
 right: 10px; /* Отступ справа */
 z-index: 1000; /* Убедитесь, что переключатель темы находится над другими элементами */
 }
- 
-/*медиа запросы*/
-/* Медиа-запросы для мобильных устройств */
-
-    /* Медиа-запросы для мобильных устройств */
-    @media (max-width: 768px) {
-
-
-
-        #social-links {
-            flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
-            justify-content: center; /* Центрирование иконок по горизонтали */
-            gap: 5px; /* Расстояние между иконками */
-        }
-        
-        .social-link {
-            width: 60px; /* Меньше размер для мобильных устройств */
-            height: 60px; /* Меньше размер для мобильных устройств */
-            line-height: 60px; /* Высота строки соответствует высоте блока */
-        }
-        }
-
-.news-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
 
 .logo-image {
     border-radius: 10%;
     width: 50px;
     height: 50px;
+}
+
+/* Стили для зеленого фона заголовка */
+.prj-back {
+    background: #A2EE00; /* Зеленый фон */
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px; /* Добавляем немного отступа */
+    width: max-content; /* Задаем ширину содержимому */
+    position: relative;
+    margin: 100px;
+    height: 140px;
+    padding: 2px;
+    padding-right: 50px;
+    padding-top: 1px
+    
+    
+}
+
+/* Стили для общего контейнера проектов, который оборачивает все карточки проектов */
+.prj-back2 {
+    background: #C8C8C8; /* Серый фон */
+    position: absolute;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Пространство между карточками */
+    left: 0;
+    padding: 10px; /* Добавляем немного отступа */
+}
+
+/* Стили для отдельной карточки проекта */
+.prj-container {
+    border-radius: 40px;
+    background: #D9D9D9;
+    width: 128px; /* Ширина карточки */
+    height: 182px; /* Высота карточки */
+   
+
+/* Стили для изображений внутри контейнеров проектов */
+.prj-container img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    border-radius: 20px; /* Adjust the border-radius as needed */
+    margin-bottom: 10px;
+}
+
+/* Стили для описания проекта */
+.prj-description {
+    text-align: center;
+    font-size: 14px; /* Adjust font-size as needed */
+    color: #333;
+}
+
+/* Стили для заголовка проектов */
+.prj-back p {
+    text-align: center;
+    font-size: 24px; /* Adjust the font-size as needed */
+    margin-bottom: 20px;
+    color: #333; /* Adjust text color as needed */
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+    .prj-back2 {
+        flex-direction: column;
+    }
+    .prj-container {
+        width: 100%; /* Full width on mobile */
+    }
 }
