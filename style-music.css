@@ -1,0 +1,148 @@
+/* Основные стили */
+body {
+    font-family: 'MuseoModerno';font-size 
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+/* Светлая и темная темы */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.light-theme {
+    background-color: #cfcfcf;
+    color: #000;
+}
+
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-item {
+        width: 90%; /* Занимает большую часть ширины экрана */
+    }
+}
+
+.logo-image {
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Стили для сайдбара */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  /* Стили для ссылок в сайдбаре */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* При наведении мыши ссылки будут менять цвет */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Кнопка закрытия сайдбара */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Стиль для кнопки, которая будет открывать сайдбар */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Стиль для основного содержимого страницы, когда сайдбар открыт */
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* Добавьте медиа-запросы для того, чтобы сайдбар был меньше на маленьких экранах */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  
+  .dark-theme .social-link i {
+    filter: invert(100%);
+}
+
+/* Стили для радиокнопок переключения темы */
+.theme-switcher {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.theme-switcher input[type="radio"] {
+    display: none;
+}
+
+.theme-switcher label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.theme-switcher input[type="radio"]:checked + label {
+    background-color: #ddd;
+    border-color: #bbb;
+}
+
+    /* Медиа-запросы для мобильных устройств */
+    @media (max-width: 768px) {
+
+    }
+    
+
+    /* Стили для переключателя темы */
+.theme-switcher {
+position: absolute; /* Позиционирование относительно ближайшего относительно позиционированного родителя */
+top: 10px; /* Отступ сверху */
+right: 10px; /* Отступ справа */
+z-index: 1000; /* Убедитесь, что переключатель темы находится над другими элементами */
+}
+
+
+.MM {
+    text-align: center
+}
