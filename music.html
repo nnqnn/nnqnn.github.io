@@ -34,9 +34,43 @@
             <label for="light">Light</label>
         </div>
     </header>
-<div id= "MM" class="MM">
-    <h1>The music I listen to 24/7</h1>
-</div>
-<div id= "MM" class="MM">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SKhpl1OMqEY?si=KBiUmf4fQsOYnGBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+
+    <div id="current-track">
+        <p>Трек: <span id="track-name">...</span></p>
+        <p>Исполнитель: <span id="artist-name">...</span></p>
+    </div>
+
+    <script>
+        async function getCurrentTrack() {
+            try {
+                const response = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
+                    headers: {
+                        'Authorization': 'Bearer {d08690eeb5f942d69b4da78e05d097a0}'
+                    }
+                });
+    
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.statusText}`);
+                }
+    
+                const data = await response.json();
+    
+                if (data && data.item) {
+                    document.getElementById('track-name').innerText = data.item.name;
+                    document.getElementById('artist-name').innerText = data.item.artists.map(artist => artist.name).join(", ");
+                } else {
+                    document.getElementById('track-name').innerText = 'Нет воспроизведения';
+                    document.getElementById('artist-name').innerText = '';
+                }
+            } catch (error) {
+                console.error('Ошибка получения данных от Spotify:', error);
+            }
+        }
+    
+        // Вызываем функцию при загрузке страницы
+        window.onload = getCurrentTrack;
+    
+        // Обновляем данные каждые 30 секунд
+        setInterval(getCurrentTrack, 10000);
+    </script>
+    
