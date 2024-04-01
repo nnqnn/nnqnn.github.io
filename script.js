@@ -33,3 +33,4 @@ function closeNav() {
 function toggleTheme(theme) {
     document.body.className = theme + '-theme';
 }
+
