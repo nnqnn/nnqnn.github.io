@@ -21,6 +21,7 @@ body {
     border-radius: 10%;
     width: 50px;
     height: 50px;
+    scale: 1.5;
 }
 
 
@@ -84,6 +85,10 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   /* Стили для ссылок в сайдбаре */
@@ -214,3 +219,4 @@ z-index: 1000; /* Убедитесь, что переключатель темы
     height: 50px;
 }
 
+a { color: inherit; }

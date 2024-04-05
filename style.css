@@ -1,4 +1,4 @@
-                                                                                /* ДЛЯ ИНДЕКСА*/ 
+/* ДЛЯ ИНДЕКСА*/ 
 
 /* Основные стили */
 
@@ -55,6 +55,7 @@ header {
     border-radius: 10%;
     width: 50px;
     height: 50px;
+    scale: 1.5;
 }
 
 /* Ссылки на социальные сети */
@@ -162,6 +163,10 @@ footer {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   /* Стили для ссылок в сайдбаре */
@@ -213,7 +218,3 @@ footer {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-
-
-  
-   
