@@ -6,6 +6,13 @@ body {
     transition: background-color 0.3s;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
 /* Светлая и темная темы */
 .dark-theme {
     background-color: #333;
