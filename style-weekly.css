@@ -1,16 +1,32 @@
 /* Основные стили */
 body {
-    font-family: 'MuseoModerno';font-size 
+    font-family: "Montserrat", sans-serif;
     margin: 0;
-    padding: 0;
     transition: background-color 0.3s;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+    padding: 10px;
 }
+
+.theme-switcher label {
+    font-family: 'MuseoModerno';
+    font-size: 16px; /* Добавляем размер шрифта */
+    padding: 5px 10px; /* Добавляем отступы */
+    margin: 0;
+    transition: background-color 0.3s;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: relative;
 }
 
 /* Светлая и темная темы */
@@ -100,6 +116,8 @@ header {
   
   /* Стили для ссылок в сайдбаре */
   .sidebar a {
+    font-family: 'MuseoModerno';font-size 
+    margin: 0;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -130,6 +148,9 @@ header {
     color: white;
     padding: 10px 15px;
     border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
   }
   
   .openbtn:hover {
@@ -158,6 +179,9 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .theme-switcher input[type="radio"] {
