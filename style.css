@@ -1,11 +1,11 @@
-/* ДЛЯ ИНДЕКСА*/ 
-
-/* Основные стили */
-
 body {
-    font-family: 'MuseoModerno';font-size 
+    font-family: 'MuseoModerno';
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+    padding: 10px;
     margin: 0;
-    padding: 0;
     transition: background-color 0.3s;
 }
 
@@ -39,6 +39,7 @@ header {
 }
 
 #profile {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,15 +110,28 @@ header {
 }
 
 .theme-switcher label {
-    cursor: pointer;
-    padding: 5px 10px;
+    font-family: 'MuseoModerno';
+    font-size: 16px; /* Добавляем размер шрифта */
+    padding: 5px 10px; /* Добавляем отступы */
+    margin: 0;
+    transition: background-color 0.3s;
     border: 1px solid #ccc;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.theme-switcher input[type="radio"]:checked + label {
+.dark-theme .theme-switcher label {
+    border-color: #fff;
+}
+
+.dark-theme .theme-switcher input[type="radio"]:checked + label {
     background-color: #8a8a8a;
     border-color: #ffffff;
+}
+
+.light-theme .theme-switcher input[type="radio"]:checked + label {
+    background-color: #8a8a8a;
+    border-color: #000000;
 }
 
 
