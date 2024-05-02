@@ -52,10 +52,11 @@ header {
 }
 
 .logo-image {
+    margin-top: 5px;
     border-radius: 10%;
-    width: 50px;
-    height: 50px;
-    scale: 1.5;
+    width: 40px;
+    height: 40px;
+    scale: 1;
 }
 
 /* Ссылки на социальные сети */
@@ -77,6 +78,7 @@ header {
     text-decoration: none;
     color: inherit;
     transition: background-color 0.2s;
+    color: #000000;
 }
 
 .social-link:hover {
@@ -114,8 +116,8 @@ header {
 }
 
 .theme-switcher input[type="radio"]:checked + label {
-    background-color: #ddd;
-    border-color: #bbb;
+    background-color: #8a8a8a;
+    border-color: #ffffff;
 }
 
 
