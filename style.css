@@ -30,7 +30,7 @@ header {
 
 /* Профиль */
 #bio-tile {
-    background-color: #8a8a8a;
+    background-color: #646464;
     border-radius: 15px;
     padding: 10px;
     margin: 10px auto;
@@ -71,8 +71,8 @@ header {
 .social-link {
     display: block;
     width: 70px;
-    height: 80px;
-    background-color: #8a8a8a;
+    height: 70px;
+    background-color: #646464;
     line-height: 80px;
     text-align: center;
     border-radius: 10px;
@@ -125,12 +125,12 @@ header {
 }
 
 .dark-theme .theme-switcher input[type="radio"]:checked + label {
-    background-color: #8a8a8a;
+    background-color: #646464;
     border-color: #ffffff;
 }
 
 .light-theme .theme-switcher input[type="radio"]:checked + label {
-    background-color: #8a8a8a;
+    background-color: #646464;
     border-color: #000000;
 }
 
