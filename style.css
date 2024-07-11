@@ -7,17 +7,8 @@ body {
     padding: 10px;
     margin: 0;
     transition: background-color 0.3s;
-}
-
-/* Светлая и темная темы */
-.dark-theme {
     background-color: #333;
-    color: #fff;
-}
-
-.light-theme {
-    background-color: #cfcfcf;
-    color: #000;
+    color: #fff;      
 }
 
 /* Шапка */
@@ -79,11 +70,11 @@ header {
     text-decoration: none;
     color: inherit;
     transition: background-color 0.2s;
-    color: #000000;
+    color: #fff;
 }
 
 .social-link:hover {
-    background-color: #ccc;
+    background-color: #8b8b8b;
 }
 
 .social-link i {
@@ -92,46 +83,6 @@ header {
 
 .social-link:hover i {
     transform: scale(1.1);
-}
-
-.dark-theme .social-link i {
-    filter: invert(100%);
-}
-
-/* Стили для радиокнопок переключения темы */
-.theme-switcher {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.theme-switcher input[type="radio"] {
-    display: none;
-}
-
-.theme-switcher label {
-    font-family: 'MuseoModerno';
-    font-size: 16px; /* Добавляем размер шрифта */
-    padding: 5px 10px; /* Добавляем отступы */
-    margin: 0;
-    transition: background-color 0.3s;
-    border: 1px solid #000;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.dark-theme .theme-switcher label {
-    border-color: #fff;
-}
-
-.dark-theme .theme-switcher input[type="radio"]:checked + label {
-    background-color: #646464;
-    border-color: #ffffff;
-}
-
-.light-theme .theme-switcher input[type="radio"]:checked + label {
-    background-color: #646464;
-    border-color: #000000;
 }
 
 /* Медиа-запросы для мобильных устройств */
@@ -150,7 +101,7 @@ header {
 .social-link {
     width: 60px; /* Меньше размер для мобильных устройств */
     height: 60px; /* Меньше размер для мобильных устройств */
-    line-height: 60px; /* Высота строки соответствует высоте блока */
+    line-height: 70px; /* Высота строки соответствует высоте блока */
 }
 }
 

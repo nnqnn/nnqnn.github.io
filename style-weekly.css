@@ -7,18 +7,9 @@ body {
     font-size: 18px;
     font-style: normal;
     padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
-
-.theme-switcher label {
-    font-family: 'MuseoModerno';
-    font-size: 16px; /* Добавляем размер шрифта */
-    padding: 5px 10px; /* Добавляем отступы */
-    margin: 0;
-    transition: background-color 0.3s;
-    border: 1px solid #000;
-    border-radius: 10px;
-    cursor: pointer;
-  }
 
 header {
     display: flex;
@@ -26,17 +17,6 @@ header {
     align-items: center;
     padding: 10px;
     position: relative;
-}
-
-/* Светлая и темная темы */
-.dark-theme {
-    background-color: #333;
-    color: #fff;
-}
-
-.light-theme {
-    background-color: #cfcfcf;
-    color: #000;
 }
 
 .logo-image {
@@ -54,8 +34,16 @@ header {
     max-width: 500px;
     overflow: hidden;
     transition: transform 0.3s; /* Добавляем плавное увеличение */
+    transition: background-color 0.2s;
 }
 
+.news-item:hover {
+    background-color: #727272;
+}
+
+.news-item i {
+    transition: filter 0.3s;
+}
 
 .news-image {
     width: 100%;
@@ -167,51 +155,6 @@ header {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-
-  
-  .dark-theme .social-link i {
-    filter: invert(100%);
-}
-
-/* Стили для радиокнопок переключения темы */
-.theme-switcher {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.theme-switcher input[type="radio"] {
-    display: none;
-}
-
-.theme-switcher label {
-    cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #000;
-    border-radius: 10px;
-}
-
-.dark-theme .theme-switcher label {
-    border-color: #fff;
-}
-
-.dark-theme .theme-switcher input[type="radio"]:checked + label {
-    background-color: #646464;
-    border-color: #ffffff;
-}
-
-.light-theme .theme-switcher input[type="radio"]:checked + label {
-    background-color: #646464;
-    border-color: #000000;
-}    
-
-/* Стили для переключателя темы */
-.theme-switcher {
-    position: absolute; /* Позиционирование относительно ближайшего относительно позиционированного родителя */
-    top: 10px; /* Отступ сверху */
-    right: 10px; /* Отступ справа */
-    z-index: 10; /* Убедитесь, что переключатель темы находится над другими элементами */
-}
 
     /* Медиа-запросы для мобильных устройств */
     @media (max-width: 768px) {
