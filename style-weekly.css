@@ -9,6 +9,10 @@ body {
     padding: 10px;
     background-color: #333;
     color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -188,14 +192,28 @@ header {
     scale: 1;
 }
 
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    background-color: #333; /* Цвет фона футера */
-    color: white; /* Цвет текста футера */
-    text-align: center; /* Выравнивание текста по центру */
-    padding: 10px; /* Внутренние отступы */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative; /* Можно использовать 'fixed' или 'sticky' для фиксации */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
 }
 
 a { color: inherit; }
