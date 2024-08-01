@@ -206,7 +206,7 @@ footer {
     padding: 10px;
     box-sizing: border-box;
     position: relative; /* Можно использовать 'fixed' или 'sticky' для фиксации */
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin-top: auto;
