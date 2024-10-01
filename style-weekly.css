@@ -9,7 +9,6 @@ body {
     padding: 10px;
     background-color: #333;
     color: #fff;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,20 +24,19 @@ header {
 
 .logo-image {
     border-radius: 10%;
-    width: 50px;
-    height: 50px;
-    scale: 1.5;
+    width: 40px;
+    height: 40px;
+    scale: 1;
 }
 
-
 .news-item {
-    background-color: #646464; /* Используем цвет из вашего стиля */
-    border-radius: 15px; /* Сохраняем стиль скругления */
-    margin: 10px;
+    background-color: #646464;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 100%;
     max-width: 500px;
     overflow: hidden;
-    transition: transform 0.3s; /* Добавляем плавное увеличение */
-    transition: background-color 0.2s;
+    transition: transform 0.3s, background-color 0.2s;
 }
 
 .news-item:hover {
@@ -57,8 +55,8 @@ header {
 }
 
 .news-content {
-    padding: 10px;
-    color: inherit; /* Цвет текста наследуется от темы */
+    padding: 15px;
+    color: inherit;
 }
 
 .news-content h2, .news-content h3 {
@@ -72,108 +70,9 @@ header {
 
 .news-version {
     font-size: 0.8em;
-    color: #555;
+    color: #aaa;
     padding: 5px;
 }
-
-/* Медиа-запросы для мобильных устройств */
-@media (max-width: 768px) {
-    .news-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .news-item {
-        width: 90%; /* Занимает большую часть ширины экрана */
-    }
-}
-/* Стили для сайдбара */
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  /* Стили для ссылок в сайдбаре */
-  .sidebar a {
-    font-family: 'MuseoModerno';
-    margin: 0;
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #646464;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* При наведении мыши ссылки будут менять цвет */
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Кнопка закрытия сайдбара */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Стиль для кнопки, которая будет открывать сайдбар */
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  /* Стиль для основного содержимого страницы, когда сайдбар открыт */
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  /* Добавьте медиа-запросы для того, чтобы сайдбар был меньше на маленьких экранах */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-
-    /* Медиа-запросы для мобильных устройств */
-    @media (max-width: 768px) {
-        #social-links {
-            flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
-            justify-content: center; /* Центрирование иконок по горизонтали */
-            gap: 5px; /* Расстояние между иконками */
-        }
-        
-        .social-link {
-            width: 60px; /* Меньше размер для мобильных устройств */
-            height: 60px; /* Меньше размер для мобильных устройств */
-            line-height: 60px; /* Высота строки соответствует высоте блока */
-        }
-        }
 
 .news-container {
     display: flex;
@@ -181,15 +80,6 @@ header {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-}
-
-
-.logo-image {
-    margin-top: 5px;
-    border-radius: 10%;
-    width: 40px;
-    height: 40px;
-    scale: 1;
 }
 
 .main {
@@ -205,7 +95,7 @@ footer {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    position: relative; /* Можно использовать 'fixed' или 'sticky' для фиксации */
+    position: relative;
     bottom: 20px;
     left: 0;
     right: 0;
@@ -217,3 +107,100 @@ footer p {
 }
 
 a { color: inherit; }
+
+/* Стили для сайдбара */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar a {
+    font-family: 'MuseoModerno';
+    margin: 0;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #646464;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .news-container {
+        padding: 10px;
+    }
+
+    .news-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .news-content {
+        padding: 10px;
+    }
+
+    #social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .social-link {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
